@@ -6,10 +6,6 @@
   "author": "Chris Chen <chrischen79@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "web",
-    "server"
-  ],
   "devDependencies": {
     "eslint": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
