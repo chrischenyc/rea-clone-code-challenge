@@ -1,0 +1,9 @@
+{
+  "name": "rea-clone",
+  "version": "1.0.0",
+  "description": "a property search full-stack demo project",
+  "repository": "https://github.com/chrischenyc/rea-clone",
+  "author": "Chris Chen <chrischen79@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
