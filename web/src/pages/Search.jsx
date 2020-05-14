@@ -10,10 +10,10 @@ function Search() {
 
   const handleSearch = (values, { setSubmitting }) => {
     setTimeout(() => {
-      const { keyword } = values;
+      const { suburb } = values;
 
-      // TODO: search query with keyword
-      console.log(`search ${keyword}`);
+      // TODO: search query with suburb
+      console.log(`search ${suburb}`);
 
       setMatchedProperties([
         { id: 'sdj23', price: 1200000, address: '12 York Street' },

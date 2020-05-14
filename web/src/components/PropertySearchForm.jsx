@@ -4,20 +4,21 @@ import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 
 const FormSchema = Yup.object().shape({
-  keyword: Yup.string().required('please enter search keyword'),
+  suburb: Yup.string().required('please enter suburb name to search'),
 });
 
 function PropertySearchForm({ onSearch }) {
   return (
     <div>
-      <Formik initialValues={{ keyword: '' }} validationSchema={FormSchema} onSubmit={onSearch}>
+      <Formik initialValues={{ suburb: '' }} validationSchema={FormSchema} onSubmit={onSearch}>
         {({ isSubmitting, errors, touched }) => (
           <Form>
-            <Field type="text" name="keyword" />
+            <span>Suburb&nbsp;</span>
+            <Field type="text" name="suburb" placeholder="suburb name" />
             <button type="submit" disabled={isSubmitting}>
               Search
             </button>
-            {errors.keyword && touched.keyword ? <div>{errors.keyword}</div> : null}
+            {errors.suburb && touched.suburb ? <div>{errors.suburb}</div> : null}
           </Form>
         )}
       </Formik>
