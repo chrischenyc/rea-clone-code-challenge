@@ -12,6 +12,7 @@ function Search() {
       const { keyword } = values;
 
       // TODO: search query with keyword
+      console.log(`search ${keyword}`);
 
       setMatchedProperties([
         { id: 'sdj23', price: 1200000, address: '12 York Street' },

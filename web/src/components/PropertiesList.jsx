@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function PropertiesList({ properties, renderItem }) {
   return (
@@ -11,5 +12,10 @@ function PropertiesList({ properties, renderItem }) {
     </div>
   );
 }
+
+PropertiesList.propTypes = {
+  properties: PropTypes.array.isRequired,
+  renderItem: PropTypes.func.isRequired,
+};
 
 export default PropertiesList;

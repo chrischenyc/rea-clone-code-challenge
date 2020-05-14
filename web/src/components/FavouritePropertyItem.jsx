@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function FavouritePropertyItem({ property, onRemoveFromFavourites }) {
-  const { id, price, address } = property;
+  const { price, address } = property;
 
   return (
     <div>
@@ -18,5 +19,10 @@ function FavouritePropertyItem({ property, onRemoveFromFavourites }) {
     </div>
   );
 }
+
+FavouritePropertyItem.propTypes = {
+  property: PropTypes.object.isRequired,
+  onRemoveFromFavourites: PropTypes.func.isRequired,
+};
 
 export default FavouritePropertyItem;
