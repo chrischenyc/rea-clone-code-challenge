@@ -7,7 +7,7 @@ import { defaultAppState, AppContext } from './context';
 import Home from './pages/Home';
 
 const apolloClient = new ApolloClient({
-  uri: process.env.SERVER_URL || 'http://localhost:4000/graphql',
+  uri: process.env.REACT_APP_SERVER_URL || 'http://localhost:4000/graphql',
 });
 
 function App() {

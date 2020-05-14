@@ -9,7 +9,6 @@ function Favourites() {
   return (
     <AppContext.Consumer>
       {({ favouriteProperties, removePropertyFromFavourites }) => {
-        console.log(favouriteProperties);
         return (
           <div>
             <PropertiesList
