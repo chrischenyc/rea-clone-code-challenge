@@ -56,3 +56,18 @@ yarn test:e2e
 yarn test:e2e:chrome
 //
 ```
+
+## TODO
+
+due to time constraint, some tasks are left unfinished:
+
+- infrastructure: terraform (or cloudformation) scripts to provision AWS S3 bucket, CloudFront, EC2, auto scaling group, and loading balancer.
+- front-end CD: aws cli to upload react build bundle to S3 bucket, purge CloudFront cache
+- back-end CD: dockerize node.js container, publish, and deploy, either through AWS Elastic Beanstalk, or k8s/helm
+- front-end e2e CI: once we've done the front-end and back-end deployment, the cypress e2e can be configured to run as part of the CI
+- missing front-end e2e test cases: add/remove properties to favourites, local user state persistence after refresh, etc
+
+## Screenshots
+
+![search](./REA_Clone_1.png)
+![favourites](./REA_Clone_2.png)
