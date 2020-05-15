@@ -1,6 +1,7 @@
 # REA clone
 
-[![Server CI](https://github.com/chrischenyc/rea-clone/workflows/Server%20CI/badge.svg)](https://github.com/chrischenyc/rea-clone/actions)
+[![Server CI](https://github.com/chrischenyc/rea-clone/workflows/Server%20CI/badge.svg)](https://github.com/chrischenyc/rea-clone/actions?query=workflow%3A%22Server+CI%22)
+[![Web CI](https://github.com/chrischenyc/rea-clone/workflows/Web%20CI/badge.svg)](https://github.com/chrischenyc/rea-clone/actions?query=workflow%3A%22Web+CI%22)
 
 ## Tech-stack decisions
 
