@@ -4,14 +4,13 @@
  * at the moment, it only exports one async search function
  */
 
-const searchBySuburb = async (suburb) => {
-  console.log(`searching properties in ${suburb} ...`);
+const { PropertiesDataProvider } = require('../models');
 
-  return [
-    { id: 'sdj23', price: 1200000, address: '12 York Street' },
-    { id: 'sdj24', price: 750000, address: '668 Inkerman Road' },
-    { id: '3j24', price: 750000, address: '668 Inkerman Road' },
-  ];
+// search function is agnostic to the underlying data storage mechanism
+const searchBySuburb = async (suburb) => {
+  const properties = await PropertiesDataProvider.propertiesBySuburb(suburb);
+
+  return properties;
 };
 
 module.exports = { searchBySuburb };
